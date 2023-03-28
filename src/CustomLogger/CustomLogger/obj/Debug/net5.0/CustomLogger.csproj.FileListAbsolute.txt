@@ -1,0 +1,12 @@
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.csproj.AssemblyReference.cache
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.AssemblyInfoInputs.cache
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.AssemblyInfo.cs
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.csproj.CoreCompileInputs.cache
+E:\DotnetCore\src\CustomLogger\CustomLogger\bin\Debug\net5.0\CustomLogger.deps.json
+E:\DotnetCore\src\CustomLogger\CustomLogger\bin\Debug\net5.0\CustomLogger.dll
+E:\DotnetCore\src\CustomLogger\CustomLogger\bin\Debug\net5.0\CustomLogger.pdb
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.dll
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\refint\CustomLogger.dll
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\CustomLogger.pdb
+E:\DotnetCore\src\CustomLogger\CustomLogger\obj\Debug\net5.0\ref\CustomLogger.dll

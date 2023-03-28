@@ -1,9 +1,10 @@
-﻿using CustomLogger.Abstracts;
+﻿using Autofac;
+using CustomLogger.Abstracts;
 using CustomLogger.DI;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
-using System.ComponentModel;
+using System.IO;
 using System.Linq;
 
 namespace CustomLogger.Implementations
