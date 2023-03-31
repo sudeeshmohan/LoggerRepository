@@ -1,0 +1,12 @@
+E:\DotnetCore\src\Employee-API\Employee.Domain\bin\Debug\net5.0\Employee.Domain.deps.json
+E:\DotnetCore\src\Employee-API\Employee.Domain\bin\Debug\net5.0\Employee.Domain.dll
+E:\DotnetCore\src\Employee-API\Employee.Domain\bin\Debug\net5.0\Employee.Domain.pdb
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.csproj.AssemblyReference.cache
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.AssemblyInfoInputs.cache
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.AssemblyInfo.cs
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.csproj.CoreCompileInputs.cache
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.dll
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\refint\Employee.Domain.dll
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\Employee.Domain.pdb
+E:\DotnetCore\src\Employee-API\Employee.Domain\obj\Debug\net5.0\ref\Employee.Domain.dll

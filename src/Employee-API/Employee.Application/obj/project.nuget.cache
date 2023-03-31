@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "pehWhAhS6AjZ7tKivWUj/8Brap0IpIeTBrWfiCJfMHwUwVQGU2okqU9IKrA/BijxuTkcZu3hR89K1rQuUBqo0g==",
+  "success": true,
+  "projectFilePath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
