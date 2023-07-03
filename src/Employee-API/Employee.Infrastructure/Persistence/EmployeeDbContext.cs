@@ -10,5 +10,6 @@ namespace Employee.Infrastructure.Persistence
         }
         public DbSet<EmployeeDetail> Employee { get; set; }
         public DbSet<EmployeePayment> EmployeePayment { get; set; }
+        public DbSet<EmployeeSalary> EmployeeSalary { get; set; }
     }
 }

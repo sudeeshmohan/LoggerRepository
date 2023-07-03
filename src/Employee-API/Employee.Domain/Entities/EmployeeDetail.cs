@@ -13,5 +13,6 @@ namespace Employee.Domain.Entities
         public string State { get; set; }
         public string ZipCode { get; set; }
         public List<EmployeePayment> EmployeePayment { get; set; }
+        public List<EmployeeSalary> EmployeeSalary { get; set; }
     }
 }

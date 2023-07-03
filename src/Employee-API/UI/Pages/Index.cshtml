@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .card-img-test{
+        height:30px;
+        width:30px;
+        padding:5px;
+    }
+</style>
+<div class="container">
+    <div class="card-deck">
+        @if (Model.employeeList?.Count > 0)
+        {
+            <div class="row">
+                @foreach (var item in Model.employeeList)
+                {
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="~/img/user.png" class="card-img-top card-img-test" alt="Card Image 1" >
+                            <div class="card-body">
+                                <h5 class="card-title">@item.FirstName @item.LastName</h5>
+                                <p class="card-text">@item.EmailAddress</p>
+                                <a href="/Employee/EmployeeView/@item.Id" class="btn btn-primary">Check More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        }
+        else
+        {
+            <div>
+                <h5>No Data</h5>
+            </div>
+        }
+    </div>
+</div>
+
