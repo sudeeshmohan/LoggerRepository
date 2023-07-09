@@ -24,5 +24,11 @@ namespace Employee.Infrastructure.Repositories
             get { return _payment ?? new PaymentServices(dbContext); }
             set { _payment = value; }
         }
+        private IEmployeeSalaryService _salary;
+        public IEmployeeSalaryService Salary
+        {
+            get { return _salary ?? new EmployeeSalaryService(dbContext); }
+            set { _salary = value; }
+        }
     }
 }

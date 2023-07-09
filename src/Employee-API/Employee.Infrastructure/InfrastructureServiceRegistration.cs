@@ -13,8 +13,10 @@ namespace Employee.Infrastructure
         {
             services.AddDbContext<EmployeeDbContext>(options =>
                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IPaymentServices, PaymentServices>();
             return services;
         }
     }

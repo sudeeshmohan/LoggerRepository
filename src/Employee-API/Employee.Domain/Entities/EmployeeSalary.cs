@@ -6,12 +6,12 @@ namespace Employee.Domain.Entities
     {
         public long Id { get; set; }
         public DateTime PaymentDate { get; set; }
-        public double Hours { get; set; }
-        public double SalaryPerHour { get; set; } = 0;
+        public float Hours { get; set; }
+        public float SalaryPerHour { get; set; } = 0;
         public long EmployeeDetailId { get; set; }
-        private double _salary;
+        private float _salary;
 
-        public double Salary
+        public float Salary
         {
             get { return _salary = Hours * SalaryPerHour; }
             set { _salary = value; }
