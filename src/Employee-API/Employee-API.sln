@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-Employee", "API-Employe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{233D7D06-7D56-4E7A-BE27-97C4BC05741B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emp.UI", "Emp.UI\Emp.UI.csproj", "{D147DC84-DEC7-4BA7-B714-566A23EC588D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emp.UI", "Emp.UI\Emp.UI.csproj", "{D147DC84-DEC7-4BA7-B714-566A23EC588D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
