@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uw/TO9+iqyl4+9io01CiG53e8yz8xHJYQDO+Y+j6gUhZUwYTg1Wt89bn8yvruc1urmU/azIL9yanxNd8stqatg==",
+  "dgSpecHash": "S1KAHMLrUDLJaYH1KNUZJaikW+SN8N2lVn1AKxEPobvT+eapSV7iM8Ba5Gx1JZCKVrUW1/IOKlNHpxCwKecV+w==",
   "success": true,
-  "projectFilePath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
+  "projectFilePath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

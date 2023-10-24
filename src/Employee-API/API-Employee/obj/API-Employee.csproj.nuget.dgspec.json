@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DotnetCore\\src\\Employee-API\\API-Employee\\API-Employee.csproj": {}
+    "D:\\App\\LoggerRepository\\src\\Employee-API\\API-Employee\\API-Employee.csproj": {}
   },
   "projects": {
-    "E:\\DotnetCore\\src\\Employee-API\\API-Employee\\API-Employee.csproj": {
+    "D:\\App\\LoggerRepository\\src\\Employee-API\\API-Employee\\API-Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotnetCore\\src\\Employee-API\\API-Employee\\API-Employee.csproj",
+        "projectUniqueName": "D:\\App\\LoggerRepository\\src\\Employee-API\\API-Employee\\API-Employee.csproj",
         "projectName": "API-Employee",
-        "projectPath": "E:\\DotnetCore\\src\\Employee-API\\API-Employee\\API-Employee.csproj",
+        "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\API-Employee\\API-Employee.csproj",
         "packagesPath": "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\",
-        "outputPath": "E:\\DotnetCore\\src\\Employee-API\\API-Employee\\obj\\",
+        "outputPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\API-Employee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,11 +33,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
-                "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj"
+              "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
+                "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj"
               },
-              "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj": {
-                "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj"
+              "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj": {
+                "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj"
               }
             }
           }
@@ -52,6 +52,12 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -79,14 +85,14 @@
         }
       }
     },
-    "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
+    "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj",
+        "projectUniqueName": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj",
         "projectName": "Employee.Application",
-        "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj",
+        "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj",
         "packagesPath": "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\",
-        "outputPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\obj\\",
+        "outputPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -108,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj": {
-                "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj"
+              "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj": {
+                "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj"
               }
             }
           }
@@ -148,14 +154,14 @@
         }
       }
     },
-    "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj": {
+    "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
+        "projectUniqueName": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
         "projectName": "Employee.Domain",
-        "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
+        "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\Employee.Domain.csproj",
         "packagesPath": "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\",
-        "outputPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Domain\\obj\\",
+        "outputPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -207,14 +213,14 @@
         }
       }
     },
-    "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj": {
+    "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj",
+        "projectUniqueName": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj",
         "projectName": "Employee.Infrastructure",
-        "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj",
+        "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\Employee.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Sudeesh Mohan\\.nuget\\packages\\",
-        "outputPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Infrastructure\\obj\\",
+        "outputPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -236,8 +242,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
-                "projectPath": "E:\\DotnetCore\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj"
+              "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj": {
+                "projectPath": "D:\\App\\LoggerRepository\\src\\Employee-API\\Employee.Application\\Employee.Application.csproj"
               }
             }
           }
@@ -259,6 +265,12 @@
               "version": "[5.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.15, )"
             }

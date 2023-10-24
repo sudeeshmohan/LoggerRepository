@@ -1,6 +1,8 @@
 ﻿using Employee.Application.Contracts;
 using Employee.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace API_Employee.Controllers
@@ -18,35 +20,76 @@ namespace API_Employee.Controllers
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            var response = await unitOfWork.Employee.GetAllAsync();
+            IReadOnlyList<EmployeeDetail> response = null;
+            try
+            {
+                response = await unitOfWork.Employee.GetAllAsync();
+            }
+            catch (Exception ex)
+            {
+                BadRequest(ex.Message);
+            }
             return Ok(response);
         }
 
         [HttpGet("GetById")]
         public async Task<IActionResult> GetById(long Id)
         {
-            var response = await unitOfWork.Employee.GetByIdAsync(Id);
+            EmployeeDetail response = null;
+            try
+            {
+                response = await unitOfWork.Employee.GetByIdAsync(Id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
             return Ok(response);
         }
 
         [HttpPost("Add")]
         public async Task<IActionResult> Add(EmployeeDetail detail)
         {
-            var response = await unitOfWork.Employee.AddAsync(detail);
+            bool response;
+            try
+            {
+                response = await unitOfWork.Employee.AddAsync(detail);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             return Ok(response);
         }
 
         [HttpDelete("Delete")]
         public async Task<IActionResult> Delete(long Id)
         {
-            var response = await unitOfWork.Employee.DeleteAsync(Id);
+            bool response;
+            try
+            {
+                response = await unitOfWork.Employee.DeleteAsync(Id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             return Ok(response);
         }
 
         [HttpPut("Update")]
         public async Task<IActionResult> Update(EmployeeDetail entity)
         {
-            var response = await unitOfWork.Employee.UpdateAsync(entity);
+            bool response;
+            try
+            {
+                response = await unitOfWork.Employee.UpdateAsync(entity);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             return Ok(response);
         }
     }
