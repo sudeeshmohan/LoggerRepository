@@ -1,4 +1,6 @@
-﻿using Employee.Application.Contracts;
+﻿using AutoMapper;
+using Employee.Application.Contracts;
+using Employee.Application.Model;
 using Employee.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,33 +14,49 @@ namespace API_Employee.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IUnitOfWork unitOfWork;
-
-        public EmployeeController(IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="unitOfWork"></param>
+        /// <param name="mapper"></param>
+        public EmployeeController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
+        /// <summary>
+        /// Get All 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            IReadOnlyList<EmployeeDetail> response = null;
+            IReadOnlyList<EmployeeDto> response = null;
             try
             {
-                response = await unitOfWork.Employee.GetAllAsync();
+                var emp = await unitOfWork.Employee.GetAllAsync();
+                response = _mapper.Map<IReadOnlyList<EmployeeDetail>, List<EmployeeDto>>(emp);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                BadRequest(ex.Message);
+                throw;
             }
             return Ok(response);
         }
-
+        /// <summary>
+        /// Get By Id
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpGet("GetById")]
         public async Task<IActionResult> GetById(long Id)
         {
-            EmployeeDetail response = null;
+            EmployeeDto response = null;
             try
             {
-                response = await unitOfWork.Employee.GetByIdAsync(Id);
+                var emp = await unitOfWork.Employee.GetByIdAsync(Id);
+                response = _mapper.Map<EmployeeDetail, EmployeeDto>(emp);
             }
             catch (Exception)
             {
@@ -47,14 +65,19 @@ namespace API_Employee.Controllers
 
             return Ok(response);
         }
-
+        /// <summary>
+        /// Add
+        /// </summary>
+        /// <param name="detail"></param>
+        /// <returns></returns>
         [HttpPost("Add")]
-        public async Task<IActionResult> Add(EmployeeDetail detail)
+        public async Task<IActionResult> Add(EmployeeDto detail)
         {
             bool response;
             try
             {
-                response = await unitOfWork.Employee.AddAsync(detail);
+                var employee = _mapper.Map<EmployeeDto, EmployeeDetail>(detail);
+                response = await unitOfWork.Employee.AddAsync(employee);
             }
             catch (Exception)
             {
@@ -62,7 +85,11 @@ namespace API_Employee.Controllers
             }
             return Ok(response);
         }
-
+        /// <summary>
+        /// Delete
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         [HttpDelete("Delete")]
         public async Task<IActionResult> Delete(long Id)
         {
@@ -77,14 +104,19 @@ namespace API_Employee.Controllers
             }
             return Ok(response);
         }
-
+        /// <summary>
+        /// Update
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [HttpPut("Update")]
-        public async Task<IActionResult> Update(EmployeeDetail entity)
+        public async Task<IActionResult> Update(EmployeeDto entity)
         {
             bool response;
             try
             {
-                response = await unitOfWork.Employee.UpdateAsync(entity);
+                var employee = _mapper.Map<EmployeeDto, EmployeeDetail>(entity);
+                response = await unitOfWork.Employee.UpdateAsync(employee);
             }
             catch (Exception)
             {

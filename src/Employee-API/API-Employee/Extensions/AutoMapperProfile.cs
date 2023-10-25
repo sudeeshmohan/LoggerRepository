@@ -10,6 +10,7 @@ namespace API_Employee.Extensions
         public AutoMapperProfile()
         {
             CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<EmployeeDetail, EmployeeDto>().ReverseMap();
             CreateMap<EmployeePayment, PaymentDto>().ReverseMap();
         }
     }
